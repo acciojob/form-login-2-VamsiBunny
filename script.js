@@ -7,8 +7,12 @@ let number=document.getElementById("num");
 mybtn.addEventListener("click", function(event) {
     event.preventDefault();
 
-    console.log("First Name:", fname.value);
+	console.log("First Name:", fname.value);
     console.log("Last Name:", lname.value);
     console.log("Phone Number:", number.value);
     console.log("Email:", email.value);
+
+	alert(`Full Name:${fname.value}\nLast Name:${lname.value}\n
+	Phone Number:${number.value}\nEmail ID:${email.value}`)
+	
 });
